@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<div>
+<h2>Details about the area</h2>
+<table style="width:100% ;width=100">
+  <tr>
+    <th>Area code</th>
+    <th>Area Name </th> 
+    <th>District</th>
+	<th>City</th>
+	<th>State</th>
+	<th>Population</th>
+  </tr>
+  <tr>
+    <td>{{m[0]}}</td>
+    <td>{{m[1]}}</td>
+    <td>{{m[2]}}</td>
+	<td>{{m[3]}}</td>
+	<td>{{m[4]}}</td>
+	<td>{{m[5]}}</td>
+  </tr>
+</table>
+</div>
+
+<head>
+<div style="height:200px; width:100%;">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Avilon Bootstrap Template</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Avilon - v2.0.0
+  * Template URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">Avilon</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="assets/img/logo.png" alt=""></a> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="{{ url_for('index')}}">Home</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Intro Section ======= -->
+  <section id="intro">
+
+    <div class="intro-text">
+      <h2>Welcome!!!</h2>
+      <p>We are here to make our place a better one!</p>
+      <form action="http://127.0.0.1:5000/form" method="POST">
+		<center><input type = "text" placeholder="search by area code" name="A_code" maxlength="40" size="40"> <input type="submit" value="search" style="border-radius: 75%;background-color:#DAF7A6;padding: 20px;" ></center>
+		</form>
+    </div>
+
+    <div class="product-screens">
+
+      <div class="product-screen-1 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.6s">
+        <img src="static/assets/img/product-screen-3.png" alt="">
+      </div>
+
+      <div class="product-screen-2 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+        <img src="static/assets/img/product-screen-2.png" alt="">
+      </div>
+
+      <div class="product-screen-3 wow fadeInUp" data-wow-duration="0.6s">
+        <img src="static/assets/img/product-screen-1.png" alt="">
+      </div>
+
+    </div>
+
+  </section><!-- End Intro Section -->
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+</style>
